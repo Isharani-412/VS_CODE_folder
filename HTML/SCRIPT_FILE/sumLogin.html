@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sum of Numbers Using Button</title>
+        <script language="JavaScript">
+            function sum(f1) {
+                var a, b, s;
+                a = parseInt(f1.t1.value);
+                b = parseInt(f1.t2.value);
+                s = a + b;
+                document.getElementById("result").innerText = "Sum of numbers: " + s;
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Sum of Numbers</h2>
+        <form name="f1">
+            no1: <input type="text" size="30" name="t1"><br>
+            no2: <input type="text" size="30" name="t2"><br>
+            <input type="button" name="b1" value="Sum" onclick="sum(this.form)">
+            <input type="button" name="b2" value="Cancel">
+        </form>
+        <div id="result"></div>
+    </body>
+</html>

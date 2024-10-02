@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>calculation of simple interest</title>
+        <script language="javaScript">
+            function cal(f1){
+                var p,t,r,si;
+                p=parseInt(prompt("f1,t1,value"));
+                t=parseInt(prompt("f1,t2,value"));
+                r=parseInt(prompt("f1,t3,value"));
+                si=p*t*r/100;
+                document.write("simple interest="+si);
+
+            }
+        </script>
+    </head>
+    <body>
+        <h2>simple interest calculator</h2>
+        <form name="f1">
+            p amount: <input type="text" size=30 name=t1><br>
+            time (in year): <input type="text" size="30" name="t2" ><br>
+            rate of interest:<input type="text" size="30" name="t3"><br>
+            interest amount:<input type="text" size="30" name="t4"><br>
+            
+            <input type="button" name="b1" value="calculate" onclick="cal(f1)">
+            <input type="button" name="b2" value="cancle">
+
+        </form>
+    </body>
+</html>

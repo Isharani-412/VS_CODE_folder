@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Login Page</title>
+    <style>
+        .centered {
+            text-align: center;
+            font-family: Arial;
+            font-size: 40px;
+        }
+        .red-text {
+            color: red;
+        }
+        .uppercase {
+            text-transform: uppercase;
+        }
+        .blue-bg-button {
+            background-color: blue;
+            color: white;
+            font-size: 40px;
+            text-transform: uppercase;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form name="f3">
+        <div class="centered red-text">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" size="20" maxlength="10">
+        </div>
+        <br><br>
+        <div class="centered red-text uppercase">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" size="20" maxlength="10">
+        </div>
+        <br><br>
+        <div class="centered">
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+        </div>
+        <br><br>
+        <div class="centered">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" size="20" maxlength="50">
+        </div>
+        <br><br>
+        <div class="centered">
+            <label for="phone_no">Phone No:</label>
+            <input type="tel" id="phone_no" name="phone_no" size="20" maxlength="15">
+        </div>
+        <br><br>
+        <div class="centered">
+            <input type="button" class="blue-bg-button" name="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

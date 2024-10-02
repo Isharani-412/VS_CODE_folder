@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Check Even or Odd</title>
+    </head>
+    <body>
+       <script language="javascript">
+        var n;
+        n = parseInt(prompt("Enter a number:"));
+        var result = "";
+        
+        if (n % 2 == 0) {
+            result += "Number is even<br>";
+        } else {
+            result += "Number is odd<br>";
+        }
+
+        // Check positive or negative
+        var x;
+        x = parseInt(prompt("Enter another number:"));
+        if (x > 0) {
+            result += "Number is positive";
+        } else {
+            result += "Number is negative";
+        }
+
+        document.write(result);
+       </script>
+    </body>
+</html>
